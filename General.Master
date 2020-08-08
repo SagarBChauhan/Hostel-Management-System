@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="General.Master.cs" Inherits="final.Authentication" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    	<title>Hostel System</title>
+
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link href="assets/css/Sagar.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+     <!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="Home.aspx">Perfect <span>Hostel</span></a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="Home.aspx" class="icon fa-home" > Home</a></li>
+                    <li><a href="RegisterStudent.aspx">Register</a></li>
+                    <li><li><asp:HyperLink ID="hlLog" runat="server" NavigateUrl="~/Login.aspx" Text="Login"></asp:HyperLink></li></li>
+				</ul>
+			</nav>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+       
+        </asp:ContentPlaceHolder>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+    </div>
+    </form>
+<!-- Footer -->
+<footer id="footer">
+	<div class="container">
+	    <ul class="icons">
+		    <li><a href="https://twitter.com/__mr_saggy__" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+			<li><a href="https://www.facebook.com/mr.saggy007" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+			<li><a href="https://www.instagram.com/imrsaggy/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+			<li><a href="https://mail.google.com/mail/" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+	    </ul>
+	</div>
+	<div class="copyright">
+    	&copy; HMS. All rights reserved.
+    </div>
+</footer>
+</body>
+</html>

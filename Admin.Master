@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="final.Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    	<title>Hostel System</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="assets/js2/Bootstrap1.js">
+        <script src="assets/js2/jquery.min.js"></script>
+        <script src="assets/js2/bootstrap2.js"></script>
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link href="assets/css/Sagar.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+     <!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="Home.aspx">Perfect <span>Hostel</span></a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="Home.aspx" class="icon fa-home"> Home</a></li>
+					<li><a href="RegisterStudent.aspx">Register Student</a></li>
+                    <li><a href="RegisterRector.aspx">Register Rector</a></li>
+                    <li><a href="Diplay.aspx">Search</a></li>
+                    <li><a href="ChangePassword.aspx">Change Password</a></li>
+                    <li><a href="Reports.aspx">Reports</a></li>
+                    <!--<li><a href="#">Notification</a></li>-->
+                    <li><a href="FeeOrder.aspx">Fees</a></li>
+                    <li><a href="RoomAllocation.aspx">Room Allocation</a></li>
+                    <li><a href="ViewComplain.aspx">Complain</a></li>
+                    <!--<li><a href="#">Feedback</a></li>-->
+                    <li><a href="LogOut.aspx">Logout</a></li>
+				</ul>
+			</nav>
+         <!-- One -->
+			<section id="One" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p>Hello</p>
+						<h2><asp:Label ID="lblUser" runat="server" Text="UnKnownUser"></asp:Label></h2>
+					</header>
+				</div>
+			</section>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+       
+        </asp:ContentPlaceHolder>
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+    </div>
+    </form>
+<!-- Footer -->
+<footer id="footer">
+	<div class="container">
+	    <ul class="icons">
+		    <li><a href="https://twitter.com/__mr_saggy__" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+			<li><a href="https://www.facebook.com/mr.saggy007" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+			<li><a href="https://www.instagram.com/imrsaggy/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+			<li><a href="https://mail.google.com/mail/" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+	    </ul>
+	</div>
+	<div class="copyright">
+    	&copy; HMS. All rights reserved.
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,260 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.Master.cs" Inherits="final.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+	<title>Hostel System</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/js2/Bootstrap1.js">
+    <script src="assets/js2/jquery.min.js"></script>
+    <script src="assets/js2/bootstrap2.js"></script>
+	<link rel="stylesheet" href="assets/css/main.css" />
+    <link href="assets/css/Sagar.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+<!-- Header -->
+			<header id="header" class="alt">
+				<div class="logo"><a href="Home.aspx">Perfect <span>Hostel</span></a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="Home.aspx" class="icon fa-home"> Home</a></li>
+                    <li><a href="RegisterStudent.aspx">Register</a></li>
+					<li><a href="Book.aspx">Book Now</a></li>
+                    <li><a href="Facilities.aspx">Facilitys</a></li>
+                    <li><a href="FeeStucture.aspx">Fees Sturcture</a></li>
+                    <li><a href="Gallery.aspx">Gallery</a></li>
+                    <li><a href="ContactUs.aspx">Contact us</a></li>
+                    <li><a href="About.aspx">About</a></li>
+                    <li><asp:HyperLink ID="hlLog" runat="server" NavigateUrl="~/Login.aspx" Text="Login"></asp:HyperLink></li>
+				</ul>
+			</nav>
+
+		<!-- Banner -->
+			<section class="banner full">
+				<article>
+					<img src="images/slide01.jpg" alt="" />
+					<div class="inner">
+						<header>
+							<p>Perfect Hostel at Low Price <a href="#">Book Now</a></p>
+							<h2>Hostel</h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="images/slide02.jpg" alt="" />
+					<div class="inner">
+						<header>
+							<p>A/C & NO-A/C Rooms <a href="#">Show Catagories</a></p>
+							<h2>With Differnt Catagories</h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="images/slide03.jpg"  alt="" />
+					<div class="inner">
+						<header>
+							<p>Near To Most University <a href="#">Location</a></p>
+							<h2>Natural Area</h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="images/slide04.jpg"  alt="" />
+					<div class="inner">
+						<header>
+							<p>Best Food At Affordable Price</p>
+							<h2>Delicious Food</h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="images/slide05.jpg"  alt="" />
+					<div class="inner">
+						<header>
+							<p>Library | Gym | Yoga | etc facilities <a href="#">Gallery</a></p>
+							<h2>Useful Facility</h2>
+						</header>
+					</div>
+				</article>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper style2">
+				<div class="inner">
+					<div class="grid-style">
+
+						<div>
+							<div class="box">
+								<div class="image fit">
+									<img src="images/low-cost-room.jpg" alt="" />
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p>Low cost rooms available</p>
+										<h2>With differnet catagories</h2>
+									</header>
+									<p> We have low cost rooms available at best palce near by your university. We have room for 1 person upto 4 person</p>
+									<footer class="align-center">
+										<a href="FeeStucture.aspx" class="button alt">Show More</a>
+									</footer>
+								</div>
+							</div>
+						</div>
+
+						<div>
+							<div class="box">
+								<div class="image fit">
+									<img src="images/gym-7.jpg" alt="" />
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p>Different types of Facility</p>
+										<h2>For Self Development</h2>
+									</header>
+									<p> We have facility which can help you  to improve your self every day. Library, Yoga, Gym etc.</p>
+									<footer class="align-center">
+										<a href="Facilities.aspx" class="button alt">Learn More</a>
+									</footer>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<p>Hostel Life</p>
+						<h2>Gallery</h2>
+					</header>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="wrapper style2">
+				<div class="inner">
+					<header class="align-center">
+			<!--        <p class="special">sub Heading</p>
+						<h2>Heading<h2>
+            -->
+					</header>
+                    <br />
+                    <br />
+                    <br />
+					<div class="gallery">
+						<div>
+							<div class="image fit">
+								<a href="Gallery.aspx"><img src="images/g1.jpg" alt="" /></a>
+							</div>
+						</div>
+						<div>
+							<div class="image fit">
+								<a href="Gallery.aspx"><img src="images/g2.jpg" alt="" /></a>
+							</div>
+						</div>
+						<div>
+							<div class="image fit">
+								<a href="Gallery.aspx"><img src="images/g4.jpg" alt="" /></a>
+							</div>
+						</div>
+						<div>
+							<div class="image fit">
+								<a href="Gallery.aspx"><img src="images/g3.jpg" alt="" /></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+
+<section id="two" class="wrapper style2">
+    <div class="inner" style="width: 77%;">
+        <div class="box" align="center" >
+            <div class="content">
+                <header class="align-center">
+                    <p>Our</p>
+                    <h2>Address</h2>
+                    <section id="two" class="wrapper style2">
+                            <div class="inner" style="width: 99%;">
+                                <div  >
+                                    <p class="icon fa-home"> Address :</p>
+                                    <h4>Uka Tarsadia University Maliba Campus,</h4>
+                                    <h4>Gopal Vidyanagar, Bardoli-Mahuva Road,</h4>
+                                    <h4>Tarsadi - 394 350. Tal: Mahuva Dist: Surat.</h4>
+                                    <p></p>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d931.5492622293548!2d73.00688962918788!3d20.94460049912776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe95c432bedcf42d0!2sThe+Frozen+Fire+Photography!5e0!3m2!1sen!2sin!4v1539866911217" width="1100" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                    </section>
+<!--                    <br />       
+                    <div class="inner" style="width: 99%;">
+                        <div id="map" style="width:613px; height:613px;background:yellow"></div>
+                        <script>
+                            function myMap() {
+                                var mapOptions =
+		                        {
+		                            center: new google.maps.LatLng(20.944595, 73.007446),
+		                            zoom: 10,
+		                            mapTypeId: google.maps.MapTypeId.HYBRID
+		                        }
+                                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                            }
+                        </script>
+                        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+                    </div>
+-->
+                </header>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>
+    </form>
+    <!-- Footer -->
+<footer id="footer">
+	<div class="container">
+	    <ul class="icons">
+		    <li><a href="https://twitter.com/__mr_saggy__" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+			<li><a href="https://www.facebook.com/mr.saggy007" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+			<li><a href="https://www.instagram.com/imrsaggy/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+			<li><a href="https://mail.google.com/mail/" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+	    </ul>
+	</div>
+    <div  >
+        <p class="icon fa-mobile-phone"> Conatct : 8000070000</p>
+        <p class="icon fa-home"> Address : Uka Tarsadia University, Mahuva Road, Bardoli</p>
+    </div>
+	<div class="copyright">
+    	&copy; HMS. All rights reserved.
+    </div>
+</footer>
+</body>
+</html>
